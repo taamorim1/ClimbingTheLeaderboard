@@ -48,9 +48,9 @@ namespace ClimbingTheLeaderboard
         {
             int c;
 
-            while(!int.TryParse(Console.ReadLine(), out c))
+            while(!int.TryParse(Console.ReadLine(), out c) || Convert.ToInt32(Console.ReadLine()) < 0)
             {
-                Console.WriteLine("Please enter a number value");
+                Console.WriteLine("Please enter a number value > 0");
             }
             return c;
         }
